@@ -61,10 +61,10 @@ suite('Unit Tests', function () {
   suite('Comparisons', function () {
     // #8
     test('#isAbove, #isAtMost', function () {
-      assert.isNotNull('hello'.length, 5);
-      assert.isNotNull(1, 0);
-      assert.isNotNull(Math.PI, 3);
-      assert.isNotNull(1 - Math.random(), 1);
+      assert.isAtMost('hello'.length, 5);
+      assert.isAbove(1, 0);
+      assert.isAbove(Math.PI, 3);
+      assert.isAtMost(1 - Math.random(), 1);
     });
     // #9
     test('#isBelow, #isAtLeast', function () {
